@@ -52,6 +52,7 @@ export const NavToggler: React.FC<{
       tabIndex={tabIndex}
       type="button"
     >
+      MENU
       {children}
     </button>
   )

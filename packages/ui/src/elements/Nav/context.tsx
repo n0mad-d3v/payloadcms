@@ -73,8 +73,10 @@ export const NavProvider: React.FC<{
   useEffect(() => {
     if (navRef.current) {
       if (navOpen && midBreak) {
+        console.log('disableBodyScroll')
         disableBodyScroll(navRef.current)
       } else {
+        console.log('enableBodyScroll')
         enableBodyScroll(navRef.current)
       }
     }
