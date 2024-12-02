@@ -71,6 +71,7 @@ export const NavProvider: React.FC<{
   // on open and close, lock the body scroll
   // do not do this on desktop, the sidebar is not a modal
   useEffect(() => {
+    console.log('navOpen - chris', navOpen)
     if (navRef.current) {
       if (navOpen && midBreak) {
         disableBodyScroll(navRef.current)
